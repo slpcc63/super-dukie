@@ -9,49 +9,128 @@ permissions:
 jobs:
   restore:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v5
 
-      - name: Verify and unpack checkpoint
-        shell: python
+      - name: Restore checkpoint
+        shell: bash
         run: |
-          import hashlib, json, pathlib, zipfile, sys
+          python3 <<'PY'
+          import hashlib
+          import json
+          import pathlib
+          import sys
+          import zipfile
 
-def show_error(kind, error, traceback):
-    message = f"{kind.__name__}: {error}"
-    message = message.replace("%", "%25").replace("\n", "%0A").replace("\r", "%0D")
-    print(f"::error title=Checkpoint restore failed::{message}", flush=True)
+          try:
+              root = pathlib.Path.cwd()
+              archive = root / "Super-Dukie-Central-Checkpoint.zip"
 
-sys.excepthook = show_error
+              if not archive.exists():
+                  raise FileNotFoundError(
+                      "Super-Dukie-Central-Checkpoint.zip is not in the repository root"
+                  )
 
-          root = pathlib.Path.cwd()
-          archive = root / 'Super-Dukie-Central-Checkpoint.zip'
+              with zipfile.ZipFile(archive) as checkpoint:
+                  manifest = json.loads(
+                      checkpoint.read("CHECKPOINT-MANIFEST.json")
+                  )
 
-          with zipfile.ZipFile(archive) as z:
-              manifest = json.loads(z.read('CHECKPOINT-MANIFEST.json'))
-              pending = []
+                  pending = []
 
-              for entry in manifest['files']:
-                  relative = pathlib.PurePosixPath(entry['path'])
-                  assert not relative.is_absolute()
-                  assert '..' not in relative.parts
-                  assert relative.parts[0] not in ('.git', '.github')
+                  for entry in manifest["files"]:
+                      relative = pathlib.PurePosixPath(entry["path"])
 
-                  data = z.read('super-dukie/' + str(relative))
-                  assert len(data) == entry['size']
-                  assert hashlib.sha256(data).hexdigest() == entry['sha256']
+                      if relative.is_absolute() or ".." in relative.parts:
+                          raise ValueError(f"Unsafe path: {relative}")
 
-                  target = root.joinpath(*relative.parts)
-                  if target.exists() and target.read_bytes() != data:
-                      assert (
-                          str(relative) == 'README.md'
-                          and target.read_text().strip() == '# super-dukie'
-                      ), 'Existing file conflict: ' + str(relative)
+                      if relative.parts[0] in (".git", ".github"):
+                          raise ValueError(f"Protected path: {relative}")
 
-                  pending.append((target, data))
+                      data = checkpoint.read(
+                          "super-dukie/" + str(relative)
+                      )
 
-              for target, data in pending:
-                  target.parent.mkdir(parents=True, exist_ok=True)
-                  target.write_bytes(data)
+                      if len(data) != entry["size"]:
+                          raise ValueError(f"Wrong size: {relative}")
 
-          status_path = root / 'PROJECT-STATUS.json
+                      if hashlib.sha256(data).hexdigest() != entry["sha256"]:
+                          raise ValueError(f"Hash mismatch: {relative}")
+
+                      target = root.joinpath(*relative.parts)
+
+                      if target.exists() and target.read_bytes() != data:
+                          allowed_readme = (
+                              str(relative) == "README.md"
+                              and target.read_text().strip() == "# super-dukie"
+                          )
+
+                          if not allowed_readme:
+                              raise ValueError(
+                                  f"Existing file conflict: {relative}"
+                              )
+
+                      pending.append((target, data))
+
+                  for target, data in pending:
+                      target.parent.mkdir(parents=True, exist_ok=True)
+                      target.write_bytes(data)
+
+              status_path = root / "PROJECT-STATUS.json"
+              status = json.loads(status_path.read_text())
+              status["repository_url"] = (
+                  "https://github.com/slpcc63/super-dukie"
+              )
+              status["remote_status"] = "active"
+              status["migration_status"] = "incomplete"
+              status_path.write_text(
+                  json.dumps(status, indent=2) + "\n"
+              )
+
+              (root / "README.md").write_text(
+                  "# Super Dukie — central production record\n\n"
+                  "Read START-HERE.md first.\n\n"
+                  "Migration is incomplete: newer artwork and visual "
+                  "inputs still require recovery.\n"
+              )
+
+          except Exception as error:
+              message = f"{type(error).__name__}: {error}"
+              message = (
+                  message.replace("%", "%25")
+                  .replace("\n", "%0A")
+                  .replace("\r", "%0D")
+              )
+              print(
+                  f"::error title=Checkpoint restore failed::{message}"
+              )
+              raise
+          PY
+
+      - name: Validate restored checkpoint
+        shell: bash
+        run: |
+          if ! python3 tools/checkpoint.py --check; then
+            echo "::error title=Checkpoint validation failed::tools/checkpoint.py reported an error"
+            exit 1
+          fi
+
+      - name: Commit restored files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md START-HERE.md AGENTS.md PROJECT-STATUS.json MIGRATION.md canon issues sources tools workflow
+
+          if git diff --cached --quiet; then
+            echo "Checkpoint files are already restored."
+          else
+            git commit -m "Restore central coordinator and Issue 4 checkpoint"
+            git push || {
+              echo "::error title=Git push failed::The workflow could not push the restored files"
+              exit 1
+            }
+          fi
