@@ -1,0 +1,17 @@
+# Instructions for every Super Dukie conversation
+- Shannon is the approval authority. The coordinator routes work; the repository retains decisions and progress.
+- Keep planning, script, artwork, QA and PDF stages distinct. Full ordered issue plan requires explicit approval before scripting.
+- New characters, machines, tools, locations and visual objects require approved descriptions and appropriate Atlas references before production.
+- Preserve approved script and existing page approvals. Never substitute a remembered or reconstructed script.
+- Artwork proceeds page by page, with explicit preflight/generation authorization and explicit page acceptance. No mass generation.
+- Salvage limit: maximum two edits per page before pausing. Unknown historical counters remain unknown; migration never resets them. Record any issue-specific attempt limit separately.
+- Record usage authorization and estimated cost before a spending task. Historic allowances do not authorize current spending.
+- No automatic retries, watchers, cross-thread messages, production or QA unless explicitly authorized.
+- Acceptance, visual QA, Canon QA, file availability and print readiness are separate fields.
+- Accepted artwork is reference authority only for its approved role. Preserve page-specific exceptions.
+- Never attach the full Atlas/history when a small scoped reference set suffices. Derived crops retain source identity and role; preserve originals.
+- Save every attempt, prompt, input reference list, terminal error and review. Never call a failed task still processing.
+- Commit output, approvals, status and dependencies together after each completed step. Verify remote main points to the resulting commit before saying saved to GitHub.
+- If upload fails, mark the step local/pending and supply a checkpoint package; do not advance dependent work.
+- Never overwrite newer remote progress: re-read main, compare expected parent and stop on conflict. Non-force updates only.
+- Do not infer missing approvals or reopen accepted pages solely because evidence/bytes are missing.

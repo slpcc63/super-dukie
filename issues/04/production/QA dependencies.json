@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "stage": "artwork",
+  "planning_handoff": null,
+  "planning_source_status": "approved structure reported by script; original plan/approval not imported",
+  "script": "issues/04/script.md",
+  "requirements": [
+    {
+      "id": "duke-likeness",
+      "role": "selected Page 11; Page 12 excluded",
+      "path": null,
+      "status": "missing_bytes"
+    },
+    {
+      "id": "costume",
+      "role": "transformed Atlas and cape clasp; side-view shape/flow only",
+      "path": null,
+      "status": "missing_bytes"
+    },
+    {
+      "id": "magnus-equipment",
+      "role": "accepted Pages 15–16 equipment and clothing",
+      "path": null,
+      "status": "missing_bytes"
+    },
+    {
+      "id": "harvester",
+      "role": "canonical machine screenshot/Atlas plus addendum",
+      "path": null,
+      "status": "missing_bytes"
+    },
+    {
+      "id": "damaged-site",
+      "role": "Pages 4–9 site screenshots; their previous approval remains recorded",
+      "path": null,
+      "status": "missing_bytes"
+    },
+    {
+      "id": "page17-candidate",
+      "role": "current unaccepted candidate for bounded correction",
+      "path": null,
+      "status": "missing_bytes"
+    }
+  ]
+}

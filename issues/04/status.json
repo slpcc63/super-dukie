@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "issue": 4,
+  "stage": "artwork",
+  "migration_status": "incomplete",
+  "last_reported_accepted_page": 16,
+  "current_page": 17,
+  "current_candidate": "unaccepted",
+  "last_attempt": {
+    "outcome": "failed",
+    "error": "image_request_too_large",
+    "output_confirmed": false
+  },
+  "pages_18_to_22": "pending",
+  "page_02": "tentative; Duke panels 2–3 need review",
+  "approval_evidence_level": "imported recovery record; original message identifiers retained in source",
+  "canonical_qa": "not established for pages 6–17",
+  "edit_count": null,
+  "usage_authorization": null,
+  "script": {
+    "path": "issues/04/script.md",
+    "source_library_id": "libfile_335e18913ffc8191928fd56976913233",
+    "source_reported_sha256": "38299201219618ca6a9b54dbc94b19c351c86677bc690bfca0a8fd83dea10ed7",
+    "import_method": "Library full-text read; hash checked by checkpoint tool"
+  },
+  "next_action": "Recover and inspect minimal Page 17 actual reference bytes; present exact correction setup to Shannon before any new candidate.",
+  "production_ready": false,
+  "blockers": [
+    "Private GitHub repository not accessible/created",
+    "Newer artwork and scoped reference bytes not recovered",
+    "Historical edit counter and current usage scope not established"
+  ],
+  "source": "sources/issue-04-recovery-2026-10-13.txt"
+}

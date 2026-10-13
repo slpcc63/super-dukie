@@ -1,0 +1,184 @@
+SUPER DUKIE ISSUE 4 CONTINUATION AND RECOVERY HANDOFF
+Verified 13 October 2026 UTC
+
+PURPOSE AND CURRENT STOP POINT
+
+Resume only the existing Issue 4 work when Shannon authorizes the next action. Preserve all artwork, rejected candidates, approvals, scripts, source packages, and recovery records. This handoff is a readable continuation record, not a complete backup of the inaccessible cloud artwork.
+
+The latest Page 17 correction attempt failed. Its last assistant message says “still processing,” but the recorded outcome is failed with image_request_too_large: “The combined resolved image content is too large. Reduce the number or size of input images.” No revised Page 17 result is confirmed. Do not leave the user waiting for a result that is not running.
+
+Working thread: 01a12e0e-be96-72b4-86ff-178601d5802a
+Failed retry turn: 01a13321-e6b3-748b-a9be-f07fa4e96684
+Earlier recovery thread: 01a12b7e-c4fa-74e6-9082-8d84a77e000c
+
+Page 16 remains accepted. Page 17's existing candidate is unaccepted. Its five-panel count and dialogue were visually reviewed as correct; this was not a Canon QA pass. Keep Pages 18–22 pending. No generation, editing, approval, Canon QA, PDF assembly, automation, or production restart was performed for this recovery.
+
+SCRIPT AUTHORITY
+
+Shannon's working-thread message 01a130bc-eb09-70df-a48e-30e8eeda4391 explicitly directs:
+“Use the attached complete 22-page Issue 4 script as the source for Page 11 onward. Preserve all existing Page 1–10 approvals and artwork.
+Page 10 remains accepted. Perform the Page 11 preflight using the approved script and existing visual references. Do not generate artwork until I approve the preflight. Do not rewrite the script or restart planning.”
+
+The complete script has been recovered from its existing Library file:
+Super_Dukie_Issue_4_Complete_Script.md
+Library ID: libfile_335e18913ffc8191928fd56976913233
+File ID: file_00000000b3ec81fbae52e62980936c31
+Library path: /Super Dukie/Super_Dukie_Issue_4_Complete_Script.md
+Size: 31,192 bytes; 638 lines; all Pages 1–22 present.
+SHA-256: 38299201219618ca6a9b54dbc94b19c351c86677bc690bfca0a8fd83dea10ed7
+The bytes downloaded from Library were preserved. The earlier verified recovery handoff names this exact Library ID as the approved full script. Displayed Pages 11–17 in the working thread match it. A separate byte comparison against the later cloud-thread upload was not possible.
+
+Recorded upload path in the working thread:
+/tmp/codex-remote-attachments/01a12e0e-be96-72b4-86ff-178601d5802a/E8FD28D8-2874-497F-978F-4DA8DB903852/1-Super_Dukie_Issue_4_Complete_Script.md
+
+PAGE 17 CORRECTION SCOPE
+
+Keep the approved script and lettering unchanged. The requested visual correction is:
+1. A single network cable runs from Magnus's portable interface kit to the maintenance socket beneath Leg 4's chassis connection. Duke only guides it. Nothing connects the machine to Duke's headpiece or cape-mounted wireless communication unit.
+2. NO VISIBLE EARS on transformed Duke. Brown cape material continues from both ear roots. Keep his forehead, cheek, jaw, and side of neck exposed; no separate black ears, extra ear flaps, hood, or tight head-to-neck curtain. The lower cape edge converges at the pointed brown shield clasp with gold border and gold SD letters. No ordinary collar, cord, or neck strap.
+3. Panel 5 is a controlled SHOULDER SHOVE against the side of Foot Three, shifting the foot sideways through soil. It is not a paw push, strike, broken foot, or damaged leg.
+4. Preserve the canonical ROUND repulsion emitters. Panel 3 fires and goes dark. Panel 4 shows exactly ONE of its THREE recharge segments. Do not substitute rectangular grilles. The emitter's three-segment recharge is distinct from the reservoir's five-segment gauge.
+5. Clearly preserve the destroyed regulator and its debris between Legs 4–5. Extraction remains at maximum, reservoir fill does not regress, and previously damaged conduits remain visibly sealed.
+6. Keep Magnus outside Leg 4's sweep. Preserve the separate elevated yellow-railed control platform, transfer trench, and drainage/berm geography. Linked dialogue must visibly read as transmitted speech.
+
+Geography: six walking legs numbered clockwise from above; Leg 1 faces the Creator's platform, Leg 4 faces the woods and Duke's approach. There are two separate upper pincers, three waist emitters, one central vertical extraction shaft, a dorsal reservoir, and one armored transfer line exiting between Legs 1–2. Do not copy incidental numbering mistakes in earlier artwork.
+
+LATEST AUTHORIZATION AND LIMIT
+
+The approved Page 17 preflight appeared in turn 01a132e5-53ad-7229-868c-1908b802a0d3. The site-reference gap was resolved by Shannon's supplied Pages 4–9 screenshots, acknowledged in turn 01a13313-e26a-77bd-b2e3-279afa3a9d68. Shannon approved generation in message 01a13315-79b7-75ba-a6c1-35cd70b6d792. The candidate was supplied for review. Shannon then questioned the cable connection and asked about other issues; the six corrections above preserve that review. His “Please retry” is message 01a13321-ea13-71a7-8ad9-043655fbee28. That retry failed.
+
+This record preserves those instructions; it does not approve a new candidate, authorize a different reference set, or authorize automatic retries. For a materially changed continuation setup, make the exact accessible references and intended correction visible before producing one candidate, and stop for Shannon's review. Do not trigger the failed thread merely to obtain a status or export.
+
+MINIMAL REFERENCE INVENTORY
+
+Carry only the inputs needed for Page 17. Do not attach or resolve the entire 88,796,593-byte Complete Atlas or an entire history of old images.
+
+A. Duke likeness: Shannon's selected Page 11 image, supplied again during Page 12 review. Accepted Page 11's exact output path is in the ledger below. The later reattached image has not been independently matched by bytes to that output. Page 12 is expressly excluded as Duke likeness authority.
+B. Costume: transformed-form atlas authority and the newer cape-clasp addendum. Written rules are preserved above. The approved cape side-view study can supply SHAPE AND FLOW ONLY, not anatomy or attachment hardware.
+C. Magnus and equipment: accepted Pages 15–16 for present clothing, brass/plum portable interface kit, cable, and matching communications. Use only the relevant equipment/character views.
+D. Machine design: the supplied Harvester canonical screenshot and authority addendum, plus the approved Harvester atlas if actual pixels are accessible. It controls machine construction and leg identities; do not invent a damaged configuration from the intact reference.
+E. Damaged site: the already supplied Pages 4–9 screenshots. Pages 4–5 establish clearing, separate yellow-railed platform, transfer trench, regulator placement; Pages 6–7 establish destroyed regulator, debris, extraction surge, drainage cut; Page 9 establishes sealed conduit, reservoir state, emitter recharge. These were accepted as sufficient site-continuity references. Their pixel files and identifiers are not exposed by the read-only thread reader.
+
+Retain each reference's role. Do not load a page as general design authority merely because its artwork was accepted. Reopen actual image bytes before claiming visual access. Any lightweight crop or assembled reference should preserve its source and limited role, and must not replace the original.
+
+SELECTED ARTWORK AND ACCEPTANCE LEDGER
+
+Earlier source snapshot: Page 1 v2 accepted; Page 2 v5 tentative with Duke in Panels 2–3 still needing review; Page 3 v2 accepted; Page 4 v6 accepted; Page 5 v1 accepted with a PAGE-5-ONLY neck-cord exception. Do not flatten “preserve existing approvals” into accepting all of Pages 1–9.
+
+Important correction: Page 6 v5 was historically unaccepted, with Canon QA pending. Recovery-thread production later created v6/v7/v8, and Shannon explicitly accepted v8. Preserve v5's historical status and select v8 as the latest accepted Page 6. Page 6 v4 remains approved only for the narrow cape-clasp relationship; its whole page is not accepted reference authority.
+
+The following exact paths were posted as existing output links in their original threads. They are provenance/recovery targets, not claims that this recovery workspace contains the images. Original bytes and hashes for these later images remain unverified here. No Canon QA pass is claimed for Pages 6–17.
+
+Page 6 v8: accepted
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Issue 4 production/Page 6/Issue 4 Page 6 candidate v8 trial.png
+User acceptance message: 01a12c60-7be7-7046-9a11-6a4e021da506
+
+Page 7 v1: accepted
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Issue 4 production/Page 7/Issue 4 Page 7 candidate v1.png
+User acceptance message: 01a12c71-402e-717c-8275-fcc26c972547
+
+Page 8 v2: accepted
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Issue 4 production/Page 8/Issue 4 Page 8 candidate v2 balloon tail.png
+User acceptance message: 01a12ca1-b9a0-74f6-9678-70065edb7c8a
+
+Page 9 v6: accepted
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Issue 4 production/Page 9/Issue 4 Page 9 candidate v6 fresh generation.png
+User acceptance message: 01a12d2f-4137-7003-83bd-d39431292fa5
+
+Page 10 latest: accepted
+/workspace/generated_images/exec-0c3a5383-0d99-426a-94e0-16dec327dba6.png
+User acceptance message: 01a13049-9b71-7344-b310-b37233917eb9
+
+Page 11 latest: accepted
+/workspace/generated_images/exec-9cc29c6c-e3a1-4a38-9df6-0603a74b6d7b.png
+User acceptance message: 01a131e5-2f70-7342-8dc6-778ddfcd7a21
+
+Page 12 latest: accepted for now; do not use as Duke likeness
+/workspace/generated_images/exec-18dfbde4-ca0d-4ace-9089-90f293f664df.png
+User acceptance message: 01a13214-4bae-73c0-b1d4-a65901daf34c
+
+Page 13 latest: accepted
+/workspace/generated_images/exec-a692bdda-dedb-4ec3-aecb-eab9e4b0387c.png
+User acceptance message: 01a1321f-19f1-713c-ac5d-4883f50f2d55
+
+Page 14 latest: accepted
+/workspace/generated_images/exec-4c928367-aff9-41ea-8b14-4d81cb75ff6f.png
+User acceptance message: 01a13277-9f96-7234-84d9-b0cfc9820453
+
+Page 15 latest: accepted
+/workspace/generated_images/exec-4f152bec-5442-4b92-b3d1-9d226d4d17a5.png
+User acceptance message: 01a13289-a35f-700d-b93a-0a5cdddf57c9
+
+Page 16 latest: accepted
+/workspace/generated_images/exec-89880007-3581-4443-8266-0eb3677a9736.png
+User acceptance message: 01a132e4-e1d0-72e3-a138-6ef0da9d566f
+
+Page 17 first candidate: unaccepted; visual corrections requested; latest retry failed
+/workspace/generated_images/exec-8ed96bc2-bd84-455e-b877-e780c9295f7e.png
+Output message: msg_014e2fb54a76d193016acd981db08887d1920d9823b44621ed
+
+EXISTING RECOVERY PACKAGES AND LINKS
+
+The original working-thread export was posted at:
+/workspace/Super-Dukie-Page10-recovery-export.zip
+Reported size: 66,748,573 bytes; 19 files including manifest and continuity records. The original export report said its archived source bytes matched SHA-256, but this recovery has not reopened the archive. No Library ID was created for it in that thread. It includes both Page 10 versions, supplied photos, recovered ZIPs, extracted PNGs, combined atlas reference, and reconstructed records. First Mary/Blue upload bytes and a raw conversation export were reported missing; a reattached Mary/Blue photo was included.
+
+Existing native Library recovery package IDs from the verified earlier handoff:
+Part 1 Core: libfile_3432b80e86cc819197f79107d094e92e — 176,796 bytes
+Part 2 People and FERN References: libfile_544f048a86548191a134f7c12ef6810b — 9,130,670 bytes
+Part 3 Animals and Harvester References: libfile_cce2ccd67270819196f4be6ac9abcfef — 9,641,436 bytes
+Part 4 Pages 1–3: libfile_de7d95baf1908191ba57714e40827c20 — 8,770,574 bytes
+Part 5 Pages 4–6: libfile_6d06c24f202c8191b596b9dac9f95900 — 13,592,283 bytes
+These package IDs identify source snapshots, not the later Pages 6 v8 or 7–17.
+
+Other recorded reference output paths:
+Harvester atlas:
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Character reference/Harvester canonical atlas v1.png
+Approved cape shape study, historical filename retained:
+/workspace/super-dukie-issue-4-continuation/Super Dukie Issue 4 Continuation 2026-10-11/Character reference/Cape studies/Super Dukie cape side-view study v1 - unapproved.png
+The user said “Perfect” in message 01a12cdb-e950-7476-8e2c-9fb42a4675f2; approval is for cape shape and flow only.
+
+WHAT IS RECOVERED AND WHAT REMAINS INACCESSIBLE
+
+Recovered:
+- Complete approved script Library file, downloaded intact and hashed.
+- Exact Page 17 script below, correction scope, reference roles, approval state, and terminal failure.
+- Acceptance evidence and original output paths for Pages 6 v8 through 16, and unaccepted Page 17.
+- Known earlier snapshot statuses and existing package identifiers.
+
+Still inaccessible or unverified here:
+- Actual original image bytes for Page 6 v8, Pages 7–16, the Page 17 candidate, and approved cape study in the separate cloud workspaces. Their original links exist in the record; they have not been recovered by this text-only read.
+- The working thread's attached Page 11 likeness reupload, canonical harvester screenshot/addendum, equipment screenshots, and Pages 4–9 site screenshot bytes/attachment IDs. The reader returns their text context but no attachment payloads.
+- The Page 10 recovery ZIP bytes at the original cloud path.
+- Any complete byte-preserving export of all newer production files, prompts, intermediate candidates, and ledgers. This handoff must not be presented as that export.
+- A separately verified hash of the later cloud-thread upload of the complete script. Its existing approved Library copy is recovered.
+
+The supplied Pages 4–9 screenshots resolve the visual site-continuity dependency. They do not prove recovery of the exact original PNGs. Keep those two questions separate. Shannon is working on iOS; do not ask him to split PDFs or make ZIPs on his phone.
+
+APPENDIX
+EXACT APPROVED PAGE 17 SCRIPT
+
+## PAGE 17 — WAIT
+**5 panels.**
+
+**Panel 1.** At the extraction site, Magnus crouches behind a low earth berm outside Leg 4's sweep. Duke guides his network cable to the maintenance socket. Establish the control platform opposite and the transfer line beyond it.
+
+SFX: klik
+
+**Panel 2.** Magnus's portable screen displays six synchronized leg signals. He opens a maintenance pathway and introduces a small delay. His confident smile is unmistakable.
+
+MAGNUS: A maintenance port with administrator access. How generous.
+
+**Panel 3.** Duke deliberately darts into emitter range, then dives behind a thick fallen trunk as it fires. The ring darkens. Splinters fly, but Duke remains protected on the far side.
+
+SFX: WHUM!
+
+**Panel 4.** Duke is poised to move. One recharge segment illuminates. Through the earpiece, Magnus restrains him. Duke visibly holds his position.
+
+MAGNUS, LINK: Wait.
+
+**Panel 5.** Before the next segment fills, Magnus calls. Duke drives a controlled shoulder shove against the side of Foot Three, shifting it along the soil rather than smashing it. Leg Three remains structurally intact.
+
+MAGNUS, LINK: Three!
+
+SFX: SKRRR!

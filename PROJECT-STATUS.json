@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "coordinator": "This conversation; replacement uses START-HERE.md",
+  "repository_url": "https://github.com/slpcc63/super-dukie",
+  "remote_status": "active",
+  "migration_status": "incomplete",
+  "active_issue": 4,
+  "issues": {
+    "4": "issues/04/status.json",
+    "5": "planning records not migrated",
+    "6": "planning records not migrated",
+    "7": "not migrated"
+  },
+  "next_action": "Make private GitHub repository accessible; import missing approved sources and artwork without resetting progress."
+}
