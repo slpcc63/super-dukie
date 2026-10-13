@@ -15,7 +15,14 @@ jobs:
       - name: Verify and unpack checkpoint
         shell: python
         run: |
-          import hashlib, json, pathlib, zipfile
+          import hashlib, json, pathlib, zipfile, sys
+
+def show_error(kind, error, traceback):
+    message = f"{kind.__name__}: {error}"
+    message = message.replace("%", "%25").replace("\n", "%0A").replace("\r", "%0D")
+    print(f"::error title=Checkpoint restore failed::{message}", flush=True)
+
+sys.excepthook = show_error
 
           root = pathlib.Path.cwd()
           archive = root / 'Super-Dukie-Central-Checkpoint.zip'
